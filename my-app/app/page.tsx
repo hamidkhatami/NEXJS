@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../app/ui/global.css";
+import styles from "../app/ui/home.module.css";
 import "../app/ui/home.module.css";
 import { Inter, Roboto_Mono } from "next/font/google";
 
