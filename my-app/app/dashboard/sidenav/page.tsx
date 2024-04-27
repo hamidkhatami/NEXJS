@@ -39,7 +39,7 @@ export default function SideNav() {
               }
             )}
           >
-            <LinkIcon className="w-2" width={"1oopx"} />
+            <LinkIcon className="w-6" />
             <p className="hidden md:block">{link.name}</p>
           </Link>
         );
