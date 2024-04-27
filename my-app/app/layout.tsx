@@ -28,9 +28,34 @@ const roboto_mono3 = Roboto_Mono({
 });
 
 const myLocalFont = localFont({
-  src: "./my-font.woff2",
-  display: "swap",
+  // src: "../public/font/Delius-Regular.ttf",
+  src: "../public/font/OpenSans-ExtraBoldItalic.woff",
   style: "italic",
+});
+const robotofonts = localFont({
+  src: [
+    {
+      // path: "../public/font/tahoma.ttf",
+      path: "../public/font/OpenSans-ExtraBoldItalic.woff",
+      weight: "800",
+      style: "italic",
+    },
+    {
+      path: "../public/font/OpenSans-ExtraBoldItalic.woff",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../public/font/OpenSans-Regular.woff",
+      weight: "700",
+      style: "italic",
+    },
+    {
+      path: "../public/font/OpenSans-Regular.woff",
+      weight: "400",
+      style: "italic",
+    },
+  ],
 });
 
 export default function RootLayout({
@@ -48,8 +73,8 @@ export default function RootLayout({
         <div className={`${inter3.variable} ${roboto_mono3.variable}`}>
           {children}
         </div>
-
         <div className={myLocalFont.className}>local font </div>
+        <div className={robotofonts.className[2]}>mmmyyyylocal font </div>
       </body>
     </html>
   );
