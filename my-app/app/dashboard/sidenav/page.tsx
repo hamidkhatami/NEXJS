@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx";
 
 export default function SideNav() {
+  debugger;
   const pathname = usePathname();
   const links = [
     {
@@ -39,7 +40,7 @@ export default function SideNav() {
               }
             )}
           >
-            <LinkIcon className="w-6" />
+            <LinkIcon className=" md:w-2" />
             <p className="hidden md:block">{link.name}</p>
           </Link>
         );

@@ -12,16 +12,17 @@ import clsx from "clsx";
 // ...
 
 export default function NavLinks() {
+  debugger;
   const pathname = usePathname();
   const links = [
     {
       name: "invoices",
-      href: "@/app/dashboard/invoices/page.tsx",
+      href: "/dashboard/invoices",
       icon: HomeIcon,
     },
     {
       name: "customers",
-      href: "@/app/dashboard/customers/page.tsx",
+      href: "/dashboard/customers",
       icon: DocumentDuplicateIcon,
     },
   ];
